@@ -1,162 +1,61 @@
-% LaTeX Curriculum Vitae Template
-%
-% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
-% http://jblevins.org/projects/cv-template/
-%
-% You may use use this document as a template to create your own CV
-% and you may redistribute the source code freely. No attribution is
-% required in any resulting documents. I do ask that you please leave
-% this notice and the above URL in the source code if you choose to
-% redistribute this file.
+\documentclass[10pt]{article}
+\usepackage{array, xcolor, lipsum, bibentry}
+\usepackage[margin=3cm]{geometry}
 
-\documentclass[letterpaper]{article}
+\title{\bfseries\Huge Joseph M Carmack}
+\author{joseph.liping@gmail.com}
+\date{}
 
-\usepackage{hyperref}
-\usepackage{geometry}
-
-% Comment the following lines to use the default Computer Modern font
-% instead of the Palatino font provided by the mathpazo package.
-% Remove the 'osf' bit if you don't like the old style figures.
-\usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
-
-% Set your name here
-\def\name{Harold Hotelling}
-
-% Replace this with a link to your CV if you like, or set it empty
-% (as in \def\footerlink{}) to remove the link in the footer:
-\def\footerlink{http://jblevins.org/projects/cv-template/}
-
-% The following metadata will show up in the PDF properties
-\hypersetup{
-  colorlinks = true,
-  urlcolor = black,
-  pdfauthor = {\name},
-  pdfkeywords = {economics, statistics, mathematics},
-  pdftitle = {\name: Curriculum Vitae},
-  pdfsubject = {Curriculum Vitae},
-  pdfpagemode = UseNone
-}
-
-\geometry{
-  body={6.5in, 8.5in},
-  left=1.0in,
-  top=1.25in
-}
-
-% Customize page headers
-\pagestyle{myheadings}
-\markright{\name}
-\thispagestyle{empty}
-
-% Custom section fonts
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
-
-% Other possible font commands include:
-% \ttfamily for teletype,
-% \sffamily for sans serif,
-% \bfseries for bold,
-% \scshape for small caps,
-% \normalsize, \large, \Large, \LARGE sizes.
-
-% Don't indent paragraphs.
-\setlength\parindent{0em}
-
-% Make lists without bullets
-\renewenvironment{itemize}{
-  \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
-  }
-}{
-  \end{list}
-}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \begin{document}
-
-% Place name at left
-{\huge \name}
-
-% Alternatively, print name centered and bold:
-%\centerline{\huge \bf \name}
-
-\vspace{0.25in}
-
-\begin{minipage}{0.45\linewidth}
-  \href{http://www.unc.edu/}{University of North Carolina} \\
-  Department of Statistics \\
-  Smith Building \\
-  Chapel Hill, NC 27599
+\maketitle
+\vspace{1em}
+\begin{minipage}[ht]{0.48\textwidth}
+    109 Dakota Trail\\
+    Farmington, Arkansas 72730
 \end{minipage}
-\begin{minipage}{0.45\linewidth}
-  \begin{tabular}{ll}
-    Phone: & (919) 962-1234 \\
-    Fax: &  (919) 962-5678 \\
-    Email: & \href{mailto:hotelling@unc.edu}{\tt hotelling@unc.edu} \\
-    Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
-  \end{tabular}
+\begin{minipage}[ht]{0.48\textwidth}
+    December 23rd, 2017\\
+    (801) 755-2771 Mobile
 \end{minipage}
+\vspace{20pt}
 
+\section*{Objective}
+Find a job.
 
-\section*{Personal}
-
-\begin{itemize}
-\item Born on September 29, 1895.
-\item United States Citizen.
-\end{itemize}
-
+\section*{Professional Experience}
+\begin{tabular}{L!{\VRule}R}
+    2011--today&{\bf Work at company XY.}\\
+    &\lipsum[66]\\
+\end{tabular}
 
 \section*{Education}
+\begin{tabular}{L!{\VRule}R}
+    2013-present&{\bf PhD in Mechanical Engineering, University of Arkansas, GPA 4.0}\\[5pt]
+    2009--2013&{BS in Physics, Brigham Young University--Idaho, GPA 3.87}\\
+\end{tabular}
 
-\begin{itemize}
-  \item B.S. Journalism, Washington University, 1919.
+\section*{Languages}
+\begin{tabular}{L!{\VRule}R}
+    English&Mother tongue\\
+    Mandarin&Fluent (at one time)\\
+\end{tabular}
 
-  \item M.A. Mathematics, Washington University, 1921.
-
-  \item Ph.D. Mathematics, Princeton University, 1924.
-\end{itemize}
-
-
-\section*{Employment}
-
-\begin{itemize}
-\item Stanford University 1927--1931.
-\item Columbia University 1931--1946.
-\item University of North Carolina, 1946--1973.
-\end{itemize}
-
+\bibliographystyle{plain}
+\nobibliography{publications}
 
 \section*{Publications}
-
-\subsection*{Journal Articles}
-
-\begin{itemize}
-\item A General Mathematical Theory of Depreciation, 1929, {\it Journal
-    of The American Statistical Association} 20, 340--353.
-\item Differential Equations Subject to Error, 1927, {\it Journal of The
-    American Statistical Association}.
-\item Applications of the Theory of Error to the Interpretation of
-  Trends (with H. Working), 1929, {\it Journal of the American
-    Statistical Association}.
-\end{itemize}
-
-\subsection*{Proceedings}
-
-\begin{itemize}
-\item A generalized T-Test and measure of multivariate dispersion,
-  Proc. Second Berkeley Symposium of Mathematical Statistics and
-  Probability, 1951.
-\end{itemize}
-
-\bigskip
-
-% Footer
-\begin{center}
-  \begin{footnotesize}
-    Last updated: \today \\
-    \href{\footerlink}{\texttt{\footerlink}}
-  \end{footnotesize}
-\end{center}
+\begin{tabular}{L!{\VRule}R}
+    2017&\bibentry{carmack2017diverse}\\[5pt]
+    2015&\bibentry{carmack2015numerical}\\
+    2013&\bibentry{carmack2013extending}\\
+\end{tabular}
+{\vspace{20pt}\newline\newline
+\vspace{20pt}
+\scriptsize\hfill Created using \LaTeX}
 
 \end{document}
