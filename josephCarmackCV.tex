@@ -1,61 +1,180 @@
 \documentclass[10pt]{article}
 \usepackage{array, xcolor, lipsum, bibentry}
-\usepackage[margin=3cm]{geometry}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 \title{\bfseries\Huge Joseph M Carmack}
-\author{joseph.liping@gmail.com}
 \date{}
 
 \definecolor{lightgray}{gray}{0.8}
+\newcolumntype{F}{>{\raggedright}p{0.35\textwidth}}
+\newcolumntype{D}{p{0.65\textwidth}}
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \begin{document}
 \maketitle
-\vspace{1em}
-\begin{minipage}[ht]{0.48\textwidth}
-    109 Dakota Trail\\
-    Farmington, Arkansas 72730
-\end{minipage}
-\begin{minipage}[ht]{0.48\textwidth}
-    December 23rd, 2017\\
-    (801) 755-2771 Mobile
-\end{minipage}
-\vspace{20pt}
 
-\section*{Objective}
-Find a job.
-
-\section*{Professional Experience}
-\begin{tabular}{L!{\VRule}R}
-    2011--today&{\bf Work at company XY.}\\
-    &\lipsum[66]\\
+\section*{Personal Info}
+\begin{tabular}{F!{\VRule}D}
+    {\bf Mailing Address}& 109 Dakota Trail, Farmington, Arkansas 72730 \\
+    {\bf Mobile Number}& (801) 755-2771 \\
+    {\bf Email Address}& joseph.liping@gmail.com\\
+    {\bf Personal Website}& josephcarmack.github.io\\
+    {\bf Last Updated}& \today
 \end{tabular}
+
+\section*{Statement of Intent}
+
+I desire to work in an intellectually open environment where ideas are
+exchanged freely with the intent of developing new technology to broadly impact
+society. I value diversity and the refinement that comes from innovating with a
+team from varied backgrounds towards a common goal.  Respecting differences and
+honesty are qualities I highly value in those I work with and strive to embody
+myself. I believe that a unified team, with commitment and constant effort can
+achieve amazing results that will bring about a bright future.
+
+\section*{Research Interests}
+
+I would like to assist in efforts to demystify intelligence and how it is
+implemented in both biological and machine systems. My research has focused
+on understanding existing cognitive architectures and their ability to generalise
+to a broad spectrum of problems. I have spent time surveying and implementing
+state of the art {\bf deep learning techniques for supervised, unsupervised, and
+reinforcement learning} tasks. I am interested in new deep learing algorithms
+and training techniques, as well as drawing inspiration from biologicial theories
+of intelligence in order to create {\bf next generation machine learning and artificial
+intelligence algorithms}.
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
     2013-present&{\bf PhD in Mechanical Engineering, University of Arkansas, GPA 4.0}\\[5pt]
+    \vspace{2pt}&\vspace{2pt}\\
     2009--2013&{BS in Physics, Brigham Young University--Idaho, GPA 3.87}\\
 \end{tabular}
 
-\section*{Languages}
+\section*{Skills}
+\begin{tabular}{F!{\VRule}D}
+    {\bf Programming}& C++, Python, Matlab, Bash, Git \\
+    {\bf Machine Learning}& Neural Networks, Classification, Dimensionality Reduction \\
+    {\bf Artificial Intelligence}& Deep Reinforcement Learning, Belief Networks \\
+    {\bf High Performance Computing}& CUDA C++, MPI, Linux\\
+    {\bf Data Analysis \& Visualization}& Paraview, Python (Matplotlib, Numpy)\\
+\end{tabular}
+
+\section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
-    English&Mother tongue\\
-    Mandarin&Fluent (at one time)\\
+    2013--today&{\bf Research Assitant} in the Paul Millett Research Group,
+    {\bf University of Arkansas}\\
+
+    &
+    {
+    \vspace{2pt}
+    Research in computational materials science. I Developed high performance
+    computing software in c++ to run high fidelity mesoscale material simulations.
+    Simulation models were used to study and understand complex synthesis processes
+    for advanced membranes.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    summer 2016&{\bf Sales Representative for Shine Solar LLC\\
+    &
+    {
+    \vspace{2pt}
+    Prospected my own leads, closed \$30k worth of product.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    Summer 2013&{\bf Research Intern} in the Nuclear Fuels Modeling and
+    Simulation Research Group, {\bf Idaho National Laboratory}\\
+    &
+    {
+    \vspace{2pt}
+    Studied grain boundary properties in Uranium Dioxide nuclear fuel for the
+    purpose of finding methods for optimizing fuel microstructure.
+    Responsibilities included studying scientific literature, developing
+    atomistic scale grain boundary models, and running simulations to probe the
+    models properties using high perfromance computing resources.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    2006-2007&{\bf Finish Carpenter at Hayward Enterprizes}\\
+    &
+    {
+    \vspace{2pt}
+    Built and installed custom wood furniture and cabinets. Operated high powered
+    tools and shop equipment according to safety standards and procedures.
+    }\\
+\end{tabular}
+
+\section*{Teaching Experience}
+\begin{tabular}{L!{\VRule}R}
+    2016--2017&{\bf Numerical Methods for Engineers Full Course Instructor} in
+    the Department of Mechanical Engineering at the {\bf University of
+    Arkansas}\\
+    &
+    {
+    \vspace{2pt}
+    Average class of 50 undergraduate students, prepared and adapted lecture
+    notes, delivered lectures, developed online learning videos to supplement
+    lecture material (see my website), taught engineers to program in Matlab
+    and implement state of the art numerical methods using hands on homework
+    assignments, prepared and administered exams to asses learning and assign
+    grades, ran drill sessions and held office hours to mentor individual
+    students. Performed all grading of homeworks and exams personally.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    Summer 2013&{\bf Adjunct Faculty} in the Physics Department at{\bf Brigham
+    Young University Idaho}\\
+    &
+    {
+    \vspace{2pt}
+    Taught introductory physics course to undergraduates from diverse backgrounds and
+    majors. Prepared and delivered lectures, assigned and graded homeworks, and held
+    office hours. Prepared, administered, and graded exams.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    2007--2010&{\bf English and Mandarin Chinese Tutor}\\
+    &
+    {
+    \vspace{2pt}
+    Taught English as a second langauge for free as a volunteer in Taiwan (2007-2009).
+    Classes were held weekly and anyone from the community was invited to attend. Class
+    sizes from 5-30 with students from extremely varied backgrounds (small children to 
+    elderly and beginner to advanced levels). Private Mandarin Chinese tutoring (2009-2010).
+    Online English tutoring for high school students in Taiwan (2010).
+    }\\
 \end{tabular}
 
 \bibliographystyle{plain}
 \nobibliography{publications}
 
-\section*{Publications}
+\section*{Peer Reviewed Publications}
 \begin{tabular}{L!{\VRule}R}
     2017&\bibentry{carmack2017diverse}\\[5pt]
     2015&\bibentry{carmack2015numerical}\\
+\end{tabular}
+
+\section*{Thesis and Dissertation}
+\begin{tabular}{L!{\VRule}R}
     2013&\bibentry{carmack2013extending}\\
 \end{tabular}
-{\vspace{20pt}\newline\newline
-\vspace{20pt}
-\scriptsize\hfill Created using \LaTeX}
+
+{
+    % \vspace{20pt}\newline\newline
+    \vspace{20pt}
+    \scriptsize\hfill Created using \LaTeX
+}
+
+\section*{Projects}
+
+
+\section*{Languages}
+\begin{tabular}{L!{\VRule}R}
+    English&Mother tongue\\
+    \vspace{2pt}&\vspace{2pt}\\
+    Mandarin&Fluent (at one time)\\
+\end{tabular}
 
 \end{document}
