@@ -1,4 +1,5 @@
 \documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array, xcolor, lipsum, bibentry}
 \usepackage[margin=1in]{geometry}
 
@@ -75,12 +76,12 @@ intelligence algorithms}.
     {
     \vspace{2pt}
     Research in computational materials science. I Developed high performance
-    computing software in c++ to run high fidelity mesoscale material simulations.
+    computing software in C++ to run high fidelity mesoscale material simulations.
     Simulation models were used to study and understand complex synthesis processes
     for advanced membranes.
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    summer 2016&{\bf Sales Representative for Shine Solar LLC\\
+    summer 2016&{\bf Sales Representative for Shine Solar LLC}\\
     &
     {
     \vspace{2pt}
@@ -152,29 +153,124 @@ intelligence algorithms}.
 
 \section*{Peer Reviewed Publications}
 \begin{tabular}{L!{\VRule}R}
-    2017&\bibentry{carmack2017diverse}\\[5pt]
-    2015&\bibentry{carmack2015numerical}\\
+    2017&\bibentry{carmack2017diverse} {\bf(Cover Article!)}\\
+    2015&\bibentry{carmack2015numerical}
 \end{tabular}
 
 \section*{Thesis and Dissertation}
 \begin{tabular}{L!{\VRule}R}
-    2013&\bibentry{carmack2013extending}\\
+    2013&\bibentry{carmack2013extending}{\bf  (Physics Senior Thesis)}
 \end{tabular}
+
+\section*{Projects}
+
+\subsection{C++ Machine Learning Artificial Intelligence Toolkit}
+\begin{description}
+    \item[Repository:] www.github.com/josephcarmack/MLAI\texttt{\_}Toolkit
+\end{description}
+This repository contains a library of C++ classes that implement several
+machine learning and artificial intelligence algorithms including:
+\begin{itemize}
+    \itemsep-0.5em
+    \item Neural Networks, K-Nearest Neighbors, Logistic Regression
+    \item Bayesian Belief Networks with Gibb's Sampling
+    \item Deep Q-Learning
+    \item Dimensionality Reduction Algorithms such as Principle Component
+        Analysis, ISOMAP, and Maximum Variance Unfolding.
+    \item Optimization Algorithms such as hill climbing, gradient descent,
+        and stochastic gradient descent.
+\end{itemize}
+
+\subsection{Meso--A C++ High Performance Computing Phase-field Simulation Code}
+\begin{description}
+    \item[Repository:] www.github.com/josephcarmack/meso/tree/develop
+\end{description}
+I am a core developer of the mesoscale simulation code for the Paul Millett
+Research Group at the University of Arkansas. It is used for studying the
+synthesis of soft materials such as multiphase polymer mixtures, mixtures with
+colloidal particle, and block copolymer mixtures. It supports multiple physics
+models such as diffusion based Cahn-Hilliard-Cook models, Lattice Boltzmann
+Models, and Langavin particle dynamics. It supports multiple numerical solvers
+such as finite difference solvers and fast pseudo-spectral solvers. It is a
+massively parallel code meaning that it scales well to running on modern super
+computer clusters using the Message Passing Interface (MPI) for distributing
+computational work across multiple CPU nodes. Its development has been
+supported by multiple grants from the National Science Foundation and other
+government funding sources.
+
+\subsection{Peso--A C++ Meso simulation code post processor}
+\begin{description}
+    \item[Repository:] www.github.com/josephcarmack/peso/tree/develop
+\end{description}
+
+\subsection{Parstubuilder--A Python code for automating large parametric studies}
+\begin{description}
+    \item[Repository:] www.github.com/josephcarmack/parstubuilder/tree/develop
+\end{description}
+I designed and developed this code to automate directory structure generation,
+batch Job submission, and batch job deletion of input file based HPC
+applications. It is used in the Paul Millett Research Group to efficiently
+conduct very large parametric studies with the Meso simulation code.
+
+\subsection{A Simple Python Molecular Dynamics Code}
+\begin{description}
+    \item[Repository:] www.github.com/josephcarmack/python\_molecular\_dynamics
+\end{description}
+I wrote this code as a way to learn python and also prototype particle interactions
+for my PhD research.
+
+\section*{Languages}
+
+\begin{tabular}{L!{\VRule}R}
+    English&Mother tongue\\
+    \vspace{2pt}&\vspace{2pt}\\
+    Mandarin&Fluent (at one time)\\
+\end{tabular}
+
+\section*{Community Service}
+\begin{itemize}
+    \itemsep-0.5em
+    \item {\bf Volunteer Missionary Service:} I served as a missionary for my
+        church, the Church of Jesus Christ of Latter-day Saints, in Taiwan
+        for two years. As a missionary I lived a rigorous schedule
+        (14-15 hour work days year round with no vacation) filled with community
+        service, gospel study, and active proselyting. During my mission tenure
+        I had many leadership opportunities such as being responsible for the training, well
+        being, and success of other groups of missionaries from 10-40 in number and
+        spread over large geographic regions. (2007-2009)
+    \item {\bf Cub Scout Bear Den Leader:} My wife and I volunteered to be Cub
+        Scout leaders in our community. We held weekly den meetings with groups
+        of 5-10 boys ages 8-9 and taught them life skills, took them on field
+        trips, and helped them advance through the Cub Scout ranking system.
+        (2012-2013)
+    \item {\bf Assistant Scout Master:} I volunteered as an assistant scout
+        master in my local church sponsored Boy Scout's of America troop. I
+        mentored individual scouts multiple times per week at troop meetings,
+        on monthly campouts, and during our annual BSA summer camp. (2013-2015)
+\end{itemize}
+
+\section*{Awards and Honors}
+\begin{itemize}
+    \itemsep-0.5em
+    \item Eagle Scout (2004)
+    \item Brigham Young University Idaho Academic Excellence Full Tuition Scholarship (2011-2013)
+    \item \$2,000 Society of Physics Students Scholarship (2012)
+    \item Sigma Pi Sigma Physics Honor Society nomination (top 5\% of my class)
+    \item 3rd place for best oral presentation at BYUI undergraduate research conference
+    \item Graduate Doctoral Academy Fellowship at the University of Arkansas
+        (\$10k for 4 years 2013-2017)
+    \item 1st place for best poster in University of Arkansas poster competition (2015)
+\end{itemize}
+
+\section*{Interests}
+Philosophy of science, physical fitness, homesteading, hobby electronics (Arduino),
+intelligence (brain theory, sentience, perception, etc), classical education, music
+(piano and ukulele), space travel...
 
 {
     % \vspace{20pt}\newline\newline
     \vspace{20pt}
     \scriptsize\hfill Created using \LaTeX
 }
-
-\section*{Projects}
-
-
-\section*{Languages}
-\begin{tabular}{L!{\VRule}R}
-    English&Mother tongue\\
-    \vspace{2pt}&\vspace{2pt}\\
-    Mandarin&Fluent (at one time)\\
-\end{tabular}
 
 \end{document}
