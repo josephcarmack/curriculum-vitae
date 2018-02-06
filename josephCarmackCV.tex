@@ -60,7 +60,7 @@ intelligence algorithms}.
 
 \section*{Skills}
 \begin{tabular}{F!{\VRule}D}
-    {\bf Programming}& C++, Python, Matlab, Bash, Git \\
+    {\bf Programming}& C++, Python, Matlab, Bash, Git, Make \\
     {\bf Machine Learning}& Neural Networks, Classification, Dimensionality Reduction \\
     {\bf Artificial Intelligence}& Deep Reinforcement Learning, Belief Networks \\
     {\bf High Performance Computing}& CUDA C++, MPI, Linux\\
@@ -157,6 +157,22 @@ intelligence algorithms}.
     2015&\bibentry{carmack2015numerical}
 \end{tabular}
 
+\section*{Professional Research Conference Presentations}
+\begin{tabular}{L!{\VRule}R}
+    2017&Carmack JM, Millett PC. Tuning Thin-film Bijel Morphologies using
+    External Electric Fields. {\it Material Research Society (MRS) Fall
+    Meeting}.  Boston, MA\\
+    2015&Carmack JM, Millett PC. Mesoscale simulations of bijel and trijel
+    systems confined to thin films. {\it Material Research Society (MRS) Fall
+    Meeting}. Boston, MA\\
+    2014&Carmack JM, Millett PC. Nanoparticle Self-assembly in Binary Polymer
+    Blends at the Mesoscale in thin film geometries with wetting. {\it Material
+    Research Society (MRS) Fall Meeting}. Boston, MA\\
+    2013&Carmack JM, Zhang Y, Bai X. Molecular dynamics simulations of grain
+    boundary properties in UO2. {\it The Minerals, Metals, and Materials
+    Society (TMS) Spring Meeting}. San Diego, California
+\end{tabular}
+
 \section*{Thesis and Dissertation}
 \begin{tabular}{L!{\VRule}R}
     2013&\bibentry{carmack2013extending}{\bf  (Physics Senior Thesis)}
@@ -166,26 +182,26 @@ intelligence algorithms}.
 
 \subsection{C++ Machine Learning Artificial Intelligence Toolkit}
 \begin{description}
-    \item[Repository:] www.github.com/josephcarmack/MLAI\texttt{\_}Toolkit
+    \item[Repository:] www.github.com/josephcarmack/MLAI\texttt{\_}toolkit
 \end{description}
 This repository contains a library of C++ classes that implement several
-machine learning and artificial intelligence algorithms including:
-\begin{itemize}
-    \itemsep-0.5em
-    \item Neural Networks, K-Nearest Neighbors, Logistic Regression
-    \item Bayesian Belief Networks with Gibb's Sampling
-    \item Deep Q-Learning
-    \item Dimensionality Reduction Algorithms such as Principle Component
-        Analysis, ISOMAP, and Maximum Variance Unfolding.
-    \item Optimization Algorithms such as hill climbing, gradient descent,
-        and stochastic gradient descent.
-\end{itemize}
+machine learning and artificial intelligence algorithms.% including:
+% \begin{itemize}
+%     \itemsep-0.5em
+%     \item Neural Networks, K-Nearest Neighbors, Logistic Regression
+%     \item Bayesian Belief Networks with Gibb's Sampling
+%     \item Deep Q-Learning
+%     \item Dimensionality Reduction Algorithms such as Principle Component
+%         Analysis, ISOMAP, and Maximum Variance Unfolding.
+%     \item Optimization Algorithms such as hill climbing, gradient descent,
+%         and stochastic gradient descent.
+% \end{itemize}
 
 \subsection{Meso--A C++ High Performance Computing Phase-field Simulation Code}
 \begin{description}
     \item[Repository:] www.github.com/josephcarmack/meso/tree/develop
 \end{description}
-I am a core developer of the mesoscale simulation code for the Paul Millett
+I am a primary developer of the mesoscale simulation code for the Paul Millett
 Research Group at the University of Arkansas. It is used for studying the
 synthesis of soft materials such as multiphase polymer mixtures, mixtures with
 colloidal particle, and block copolymer mixtures. It supports multiple physics
@@ -197,6 +213,14 @@ computer clusters using the Message Passing Interface (MPI) for distributing
 computational work across multiple CPU nodes. Its development has been
 supported by multiple grants from the National Science Foundation and other
 government funding sources.
+
+\subsection{Cueso--A CUDA C++ version of the Meso Simulation code (see above)}
+\begin{description}
+    \item[Repository:] www.github.com/josephcarmack/cueso
+\end{description}
+I am currently the sole developer of this version of the meso simulation code in
+the Paul Millett research group. The purpose of this code is to add GPU acceleration
+support to the physics models being explored in our research group.
 
 \subsection{Peso--A C++ Meso simulation code post processor}
 \begin{description}
