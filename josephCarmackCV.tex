@@ -1,59 +1,83 @@
 \documentclass[10pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage{array, xcolor, lipsum, bibentry}
+\usepackage{longtable}
 \usepackage[margin=1in]{geometry}
 
 \usepackage{titlesec}
 \titleformat{\section}
   {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
-\title{\bfseries\Huge Joseph M Carmack}
+\title{\bfseries\Huge Joseph M. Carmack}
 \date{}
 
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{F}{>{\raggedright}p{0.35\textwidth}}
 \newcolumntype{D}{p{0.65\textwidth}}
-\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{0.18\textwidth}}
+\newcolumntype{K}{>{\raggedleft}b{0.18\textwidth}}
+\newcolumntype{C}{>{\centering}p{0.18\textwidth}}
+\newcolumntype{R}{p{0.76\textwidth}}
+\newcolumntype{M}{p{0.76\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    }
 
 \begin{document}
 \maketitle
 
 \section*{Personal Info}
 \begin{tabular}{F!{\VRule}D}
-    {\bf Mailing Address}& 109 Dakota Trail, Farmington, Arkansas 72730 \\
+    {\bf Mailing Address}& 136 Amherst Street, Milford, NH 03055 \\
     {\bf Mobile Number}& (801) 755-2771 \\
-    {\bf Email Address}& joseph.liping@gmail.com\\
-    {\bf Personal Website}& josephcarmack.github.io\\
-    {\bf Last Updated}& \today
+    {\bf Email Address}& joseph.liping@gmail.com \\
+    {\bf Personal Website}& \url{josephcarmack.github.io} \\
+    {\bf Last Updated}& 08/18/2021
 \end{tabular}
 
-\section*{Statement of Intent}
+\section*{Values}
 
-I desire to work in an intellectually open environment where ideas are
-exchanged freely with the intent of developing new technology to broadly impact
-society. I value diversity and the refinement that comes from innovating with a
-team from varied backgrounds towards a common goal.  Respecting differences and
-honesty are qualities I highly value in those I work with and strive to embody
-myself. I believe that a unified team, with commitment and constant effort can
-achieve amazing results that will bring about a bright future.
+I value working in an intellectually rigorous and open environment where ideas
+are exchanged freely with the intent of developing new technology to broadly
+impact society for good. I highly esteem diversity and the refinement that comes from
+innovating with a team from varied backgrounds towards a common goal.
+Respecting differences and honesty are qualities I highly value in those I work
+with and strive to embody myself. I know that a unified team with relentless
+commitment to the scientific method and their mission can achieve what many
+believe is impossible.
 
 \section*{Research Interests}
 
-I would like to assist in efforts to demystify intelligence and how it is
-implemented in both biological and machine systems. My research has focused
-on understanding existing cognitive architectures and their ability to generalize
-to a broad spectrum of problems. I have spent time surveying and implementing
-state of the art {\bf deep learning techniques for supervised, unsupervised, and
-reinforcement learning} tasks. I am interested in new deep learning algorithms
-and training techniques, as well as drawing inspiration from biological theories
-of intelligence in order to create {\bf next generation machine learning and artificial
-intelligence algorithms}.
+Broadly I'm interested in understanding intelligence and how its implemented in
+the human brain and machines. I've spent the last half-decade working in the
+field of deep learning and am accutely aware of its strengths and weaknesses.
+Although I've been working in deep learning professionally, I have also sought
+a broader understanding of intelligence by studying biological-based theories
+of intelligence and cognitive theories of the human mind. This more holistic
+approach to studying intelligence has lead me to the belief that {\bf
+intelligence can be defined as the efficiency at which an agent can convert
+prior knowledge and experience into skill across large and varied task
+distributions}. This clear and quantifiable definition has lead me to further
+believe that many of the {\bf current gaps between deep learning and
+human-levels of intelligence can be overcome by leveraging unsupervised
+learning, identifying the inductive biases responsible for learning causal
+models of an agents environment, and developing robust AI task curriculum.} I
+believe all of these areas can be effectively studied and explored in the
+domain of deep reinforcement learning. In addition to increasing the
+intelligence of deep learning based agents, establishing methods to validate
+what they have learned and not learned to build trust in the human consumers of
+their services is crucial to accelerate the adoption of AI technologies. These
+areas and problems largely define my research interests.
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
-    2013-present&{\bf PhD in Mechanical Engineering, {\it University of Arkansas}, GPA 4.0}\\[5pt]
+    2013-2018&{\bf PhD in Computational Material Science, {\it University of Arkansas}, GPA 4.0}\\[5pt]
     \vspace{2pt}&\vspace{2pt}\\
     2009--2013&{BS in Physics, {\it Brigham Young University--Idaho}, GPA 3.87}\\
 \end{tabular}
@@ -61,49 +85,115 @@ intelligence algorithms}.
 \section*{Skills}
 \begin{tabular}{F!{\VRule}D}
     {\bf Programming}& C++, Python, Matlab, Bash, Git, Make \\
-    {\bf Machine Learning}& Neural Networks, Classification, Dimensionality Reduction \\
-    {\bf Artificial Intelligence}& Deep Reinforcement Learning, Belief Networks \\
-    {\bf High Performance Computing}& CUDA C++, MPI, Linux\\
-    {\bf Data Analysis \& Visualization}& Paraview, Python (Matplotlib, Numpy)\\
+    {\bf Machine Learning}& Neural Networks, Closed and OpenSet Classification, Dimensionality Reduction, Manifold Learning \\
+    {\bf Reinforcement Learning}& Deep RL (model \& model-free), OpenAI Gym, RLLib \\
+    {\bf High Performance and Cloud Computing}& CUDA, Docker, Linux Power User\\
+    {\bf Data Analysis \& Visualization}& Paraview, Matplotlib, Bokeh, Plotly, Dashboards\\
+    {\bf Data Science \& Algorithms}& Sci-kit Learn, PCA, UMAP, TSNE, Pandas, Dask, Rapids\\
+    {\bf Math}& Probability, Statistics, Linear Algebra, Differential Equations, Vector Calculus, Graph Theory\\
+    {\bf New Business Development}& Technical Concept Development, Proposal Writing, Customer Engagement\\
+    {\bf Scientific Writing}& Literature reviews,  Journal \& Conference Article Preparation and Peer Review\\
 \end{tabular}
 
 \section*{Professional Experience}
-\begin{tabular}{L!{\VRule}R}
-    2013--present&{\bf Research Assistant} in the Paul Millett Research Group,
-    {\bf{\it University of Arkansas}}\\
 
+\begin{longtable}{C!{\VRule}R}
+
+    \textbf{2018--present}&{\bf Principal Scientist (Active TS-SCI
+    Clearance) Cognitive RF Group} \\
+    \textbf{BAE Systems FAST Labs\textsuperscript{TM}}&
+    {
+    \vspace{2pt}
+    Lead development and execution of advanced Cognitive RF
+    research programs, capture intellectuall property, and transition
+    research into discriminating product capabilities. 
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
     &
     {
     \vspace{2pt}
-    Research in computational materials science. I Developed high performance
-    computing software in C++ to run high fidelity mesoscale material simulations.
-    Simulation models were used to study and understand complex synthesis processes
-    for advanced membranes.
+    {\bf(2020-2021) Algorithm Team Lead} on the
+    \href{https://beta.sam.gov/opp/a09982b4ddc54349a4845f106752ff50/view?keywords=SPiNN&sort=-relevance&index=&is_active=false&page=1&organization_id=300000412&date_filter_index=0&inactive_filter_values=false}{DARPA
+    Signal Processing in Neural Networks Program}. Developed neural
+    networks to replace standard digital signal processing (DSP) blocks
+    in an LTE receiver using physics based inductive biases to increase
+    architecture computational efficiency for deployment in edge IoT
+    devices. Developed \textbf{Generative Adversarial Network (GAN)
+    architectures} to model common RF impairments such as tone
+    interference to be used to enhance the DSP based neural network
+    training for increased robustness to edge cases. 
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    summer 2016&{\bf Sales Representative for {\it Shine Solar LLC}}\\
     &
     {
     \vspace{2pt}
-    Prospected my own leads, closed \$30k worth of product.
+    {\bf(2018-2020) Algorithm Team Lead} on the
+    \href{https://www.darpa.mil/program/radio-frequency-machine-learning-systems}{DARPA
+    RF Machine Learning Systems Program} where we {\bf established a
+    new state-of-the-art for RF Fingerprint classification} by
+    developing a highly sample efficient dilated causal convolutional
+    neural network architecture and {\bf multi-agent deep reinforcement
+    learning waveform synthesis} algorithm. 
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    Summer 2013&{\bf Research Intern} in the Nuclear Fuels Modeling and
-    Simulation Research Group, {\bf{\it Idaho National Laboratory}}\\
     &
+    {
+    \vspace{2pt}
+    {\bf(2021) Principal Investigator} on the Channel-Invariant RF
+    Fingerprinting IRAD program. Developed extensions to RF
+    Fingerprinting deep learning classifiers with inductive biases
+    allowing them to be bline to RF multi-path propagation noise.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    &
+    {
+    \vspace{2pt}
+    \textbf{(2020-2021)} Core developer for the DeepMission(TM) software framework for
+    fast prototyping of deep reinforcement learning for defense
+    applications with state-of-the-art algorithms. This framework
+    brought together several open source packages including OpenAI's
+    \href{https://gym.openai.com/}{Gym} framework,
+    \href{https://spinningup.openai.com/en/latest/}{Spinning Up}
+    library, Ray's
+    \href{https://docs.ray.io/en/latest/rllib.html}{RLLib},
+    \href{https://github.com/slundberg/shap}{SHAP}, along with custom
+    in-house algorithms for instrospection into policy understanding
+    and explainability.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    &
+    {
+    \vspace{2pt}
+    \textbf{(2019) Principal Investigator} for the RF Environment Awareness
+    with Explainable Results IRAD program. Developed explainable AI for
+    RF Scene classification.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+    &
+    {
+    \vspace{2pt}
+    \textbf{(2018)} Algorithm Developer for the BAE System's team on the
+    \href{https://www.darpa.mil/program/spectrum-collaboration-challenge}{DARPA
+    Spectrum Collaboration Challenge} Program.
+    }\\
+    \vspace{2pt}&\vspace{2pt}\\
+
+    \textbf{2013}&{\bf Materials Research, Nuclear Fuel Modeling \& Simulation
+    Group} \\
+    \textbf{Idaho National Laboratory}&
     {
     \vspace{2pt}
     Studied grain boundary properties in Uranium Dioxide nuclear fuel for the
-    purpose of finding methods for optimizing fuel microstructure.
-    Responsibilities included studying scientific literature, developing
-    atomistic scale grain boundary models, and running simulations to probe the
-    models properties using high performance computing resources. Communication
-    of research findings and conclusions at a professional international
-    research conference.
+    purpose of finding methods for optimizing fuel microstructure.  Activities
+    included studying scientific literature, developing atomistic scale grain
+    boundary models, running simulations to probe the UO2 properties using high
+    performance computing resources, and communication of research at
+    professional international research conference.
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    summer 2012&{\bf Physics Research Internship at {\it Brigham Young University}}\\
-    &
+
+    \textbf{2012}&{\bf Physics Research, Condensed Matter Group} \\
+    \textbf{Brigham Young University}&
     {
     \vspace{2pt}
     Characterized x-ray crystallography data to demonstrate novel theoretical
@@ -115,35 +205,33 @@ intelligence algorithms}.
     to communicate research findings and important results.
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    2006-2007&{\bf Finish Carpenter at {\it Hayward Enterprises}}\\
-    &
+
+    \textbf{2006-2007}&{\bf Finish Carpenter} \\
+    \textbf{Hayward Enterprises}&
     {
     \vspace{2pt}
-    Built and installed custom wood furniture and cabinets. Operated high powered
+    Built and installed custom hardwood furniture and cabinets. Operated high powered
     tools and shop equipment according to safety standards and procedures.
     }\\
-\end{tabular}
+\end{longtable}
 
 \section*{Teaching Experience}
-\begin{tabular}{L!{\VRule}R}
-    2016--2017&{\bf Numerical Methods for Engineers Full Course Instructor} in
-    the Department of Mechanical Engineering at the {\bf{\it University of
-    Arkansas}}\\
-    &
+\begin{longtable}{C!{\VRule}R}
+    \textbf{2016--2017}&{\bf Numerical Methods for Engineers Full Course Instructor}\\
+    \textbf{University of Arkansas}&
     {
     \vspace{2pt}
     Average class of 50 undergraduate students, prepared and adapted lecture
     notes, delivered lectures, developed online learning videos to supplement
-    lecture material (see my website), taught engineers to program in Matlab
+    lecture material (see my website), taught engineers to program in Matlab and Python
     and implement state of the art numerical methods using hands on homework
-    assignments, prepared and administered exams to asses learning and assign
+    assignments, prepared and administered exams to assess learning and assign
     grades, ran drill sessions and held office hours to mentor individual
     students. Performed all grading of homeworks and exams personally.
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    Summer 2013&{\bf Adjunct Faculty} in the Physics Department at {\bf{\it Brigham
-    Young University Idaho}}\\
-    &
+    \textbf{2013}&{\bf Adjunct Physics Faculty}\\
+    \textbf{Brigham Young University Idaho}&
     {
     \vspace{2pt}
     Taught introductory physics course to undergraduates from diverse backgrounds and
@@ -151,7 +239,7 @@ intelligence algorithms}.
     office hours. Prepared, administered, and graded exams.
     }\\
     \vspace{2pt}&\vspace{2pt}\\
-    2007--2010&{\bf English and Mandarin Chinese Tutor}\\
+    \textbf{2007--2010}&{\bf English and Mandarin Chinese Tutor}\\
     &
     {
     \vspace{2pt}
@@ -161,63 +249,86 @@ intelligence algorithms}.
     elderly and beginner to advanced levels). Private Mandarin Chinese tutoring (2009-2010).
     Online English tutoring for high school students in Taiwan (2010).
     }\\
-\end{tabular}
+\end{longtable}
 
 \bibliographystyle{plain}
 \nobibliography{publications}
 
-\section*{Peer Reviewed Publications}
-\begin{tabular}{L!{\VRule}R}
-    2018&Joseph M Carmack and Paul C Millett. Simulations of tuning thin-film
-    bijels using applied external electric fields. Manuscript in preparation\\
-    2017&\bibentry{carmack2017diverse} {\bf(Cover Article!)}\\
-    2015&\bibentry{carmack2015numerical}
-\end{tabular}
+\section*{Peer Reviewed Publications }
 
-\section*{Professional Research Conference Presentations}
-\begin{tabular}{L!{\VRule}R}
-    2017&Carmack JM, Millett PC. Tuning Thin-film Bijel Morphologies using
-    External Electric Fields. {\it Material Research Society (MRS) Fall
-    Meeting}.  Boston, MA\\
-    2015&Carmack JM, Millett PC. Mesoscale simulations of bijel and trijel
-    systems confined to thin films. {\it Material Research Society (MRS) Fall
-    Meeting}. Boston, MA\\
+\href{https://scholar.google.com/citations?user=dfwJUzsAAAAJ&hl=en&oi=ao}{Google Scholar}
+
+\begin{longtable}{L!{\VRule}R}
+    2021&\bibentry{carmack2021riftnet} {\bf(Best Paper Award!)}\\
+    \vspace{1pt}&\vspace{1pt}\\
+	    &\bibentry{carmack2021multi}\\
+    \vspace{1pt}&\vspace{1pt}\\
+	    &\bibentry{schmidt2021riftnext}\\
+    \vspace{1pt}&\vspace{1pt}\\
+        &\bibentry{kuzdeba2021transfer}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2020&\bibentry{robinson2020dilated}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2019&\bibentry{stankowicz2019complex}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2018&\bibentry{carmack2018tuning}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2017&\bibentry{carmack2017diverse} {\bf(Cover Article!)}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2015&\bibentry{carmack2015numerical}
+\end{longtable}
+
+\section*{Conference Presentations}
+\begin{longtable}{L!{\VRule}R}
+    2021&\bibentry{carmack2021riftnet} {\bf(Best Presentation Award!)}\\
+    \vspace{1pt}&\vspace{1pt}\\
+	    &\bibentry{carmack2021multi}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2020&\bibentry{stankowicz2019complex}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2018&\bibentry{carmack2018tuning}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2017&\bibentry{carmack2017diverse}\\
+    \vspace{1pt}&\vspace{1pt}\\
+    2015&\bibentry{carmack2015numerical}\\
+    \vspace{1pt}&\vspace{1pt}\\
     2014&Carmack JM, Millett PC. Nanoparticle Self-assembly in Binary Polymer
     Blends at the Mesoscale in thin film geometries with wetting. {\it Material
-    Research Society (MRS) Fall Meeting}. Boston, MA\\
+    Research Society (MRS) Fall Meeting}. Boston, MA \\
+    \vspace{1pt}&\vspace{1pt}\\
     2013&Carmack JM, Zhang Y, Bai X. Molecular dynamics simulations of grain
     boundary properties in UO2. {\it The Minerals, Metals, and Materials
     Society (TMS) Spring Meeting}. San Diego, California
-\end{tabular}
+\end{longtable}
 
 \section*{Thesis and Dissertation}
 \begin{tabular}{L!{\VRule}R}
-    2018&{\bf  PhD Dissertation:} Mesoscale Simulation Studies of Thin-film Bijels, Manuscript in prepartion\\
-    2013&{\bf  Physics Senior Thesis:} \bibentry{carmack2013extending} 
+    2018&{\bf PhD Dissertation:} \bibentry{carmack2018mesoscale}\\
+    2013&{\bf Physics Senior Thesis:} \bibentry{carmack2013extending} 
 \end{tabular}
 
-\section*{Projects}
+\section*{Public Coding Projects}
 
 \subsection{C++ Machine Learning Artificial Intelligence Toolkit}
 \begin{description}
     \item[Repository:] www.github.com/josephcarmack/MLAI\texttt{\_}toolkit
 \end{description}
 This repository contains a library of C++ classes that implement several
-machine learning and artificial intelligence algorithms.% including:
-% \begin{itemize}
-%     \itemsep-0.5em
-%     \item Neural Networks, K-Nearest Neighbors, Logistic Regression
-%     \item Bayesian Belief Networks with Gibbs Sampling
-%     \item Deep Q-Learning
-%     \item Dimensionality Reduction Algorithms such as Principle Component
-%         Analysis, ISOMAP, and Maximum Variance Unfolding.
-%     \item Optimization Algorithms such as hill climbing, gradient descent,
-%         and stochastic gradient descent.
-% \end{itemize}
+machine learning and artificial intelligence algorithms. Although opensource libraries existed containing these same algorithms I used this repo to teach myself. I also found that my implmentations were faster than some of the standard open source packages since they were developed in C++ instead of Python at the time. Algorithm implementations include:
+ \begin{itemize}
+     \itemsep-0.5em
+     \item Neural Networks (fully-connected layers), K-Nearest Neighbors, Logistic Regression
+     \item Bayesian Belief Networks with Gibbs Sampling
+     \item Deep Q-Learning
+     \item Dimensionality Reduction Algorithms such as Principle Component
+         Analysis, ISOMAP, and Maximum Variance Unfolding.
+     \item Optimization Algorithms such as hill climbing, gradient descent,
+         and stochastic gradient descent i.e. backpropagation.
+ \end{itemize}
 
 \subsection{Meso--A C++ High Performance Computing Phase-field Simulation Code}
 \begin{description}
-    \item[Repository:] www.github.com/josephcarmack/meso/tree/develop
+    \item[Repository:] \url{www.github.com/josephcarmack/meso/tree/develop}
 \end{description}
 I am a primary developer of the mesoscale simulation code for the Paul Millett
 Research Group at the University of Arkansas. It is used for studying the
@@ -234,20 +345,21 @@ government funding sources.
 
 \subsection{Cueso--A CUDA C++ version of the Meso Simulation code (see above)}
 \begin{description}
-    \item[Repository:] www.github.com/josephcarmack/cueso
+    \item[Repository:] \url{www.github.com/josephcarmack/cueso}
 \end{description}
-I am currently the sole developer of this version of the meso simulation code in
+Primary creator and developer of this version of the Meso simulation code in
 the Paul Millett research group. The purpose of this code is to add GPU acceleration
-support to the physics models being explored in our research group.
+support to the physics models being explored in the Millett research group.
 
 \subsection{Peso--A C++ Meso simulation code post processor}
 \begin{description}
-    \item[Repository:] www.github.com/josephcarmack/peso/tree/develop
+    \item[Repository:] \url{www.github.com/josephcarmack/peso/tree/develop}
 \end{description}
+A parallel processing set of post-processors for the Meso simulation code.
 
 \subsection{Parstubuilder--A Python code for automating large parametric studies}
 \begin{description}
-    \item[Repository:] www.github.com/josephcarmack/parstubuilder/tree/develop
+    \item[Repository:] \url{www.github.com/josephcarmack/parstubuilder/tree/develop}
 \end{description}
 I designed and developed this code to automate directory structure generation,
 batch Job submission, and batch job deletion of input file based HPC
@@ -256,7 +368,7 @@ conduct very large parametric studies with the Meso simulation code.
 
 \subsection{A Simple Python Molecular Dynamics Code}
 \begin{description}
-    \item[Repository:] www.github.com/josephcarmack/python\_molecular\_dynamics
+    \item[Repository:] \url{www.github.com/josephcarmack/python\_molecular\_dynamics}
 \end{description}
 I wrote this code as a way to learn python and also prototype particle interactions
 for my PhD research.
@@ -272,6 +384,23 @@ for my PhD research.
 \section*{Community Service}
 \begin{itemize}
     \itemsep-0.5em
+    \item {\bf Church Youth Counselor:} Mentor to church youth in grades K-12.
+        Responsibilities have flunctuated over the years according to the needs
+        of the local youth I have served but in general have included teaching
+        them life skills, helping them plan and prepare for future education,
+        ethics and leadership coaching, and activity planning and execution ,
+        e.g. weekend camp outs, annual funderaisers, summer camps etc.
+        \textbf{(2012 - present)}
+    \item {\bf Assistant Scout Master:} volunteered as an assistant scout
+        master in my local church sponsored Boy Scout's of America troop. I
+        mentored individual scouts multiple times per week at troop meetings,
+        on monthly camp outs, and during our annual BSA summer camp.
+        \textbf{(2013-2015)}
+    \item {\bf Cub Scout Bear Den Leader:} My wife and I volunteered to be Cub
+        Scout leaders in our community. We held weekly den meetings with groups
+        of 5-10 boys ages 8-9 and taught them life skills, took them on field
+        trips, and helped them advance through the Cub Scout ranking system.
+        \textbf{(2012-2013)}
     \item {\bf Volunteer Missionary Service:} I served as a missionary for my
         church, the {\it Church of Jesus Christ of Latter-day Saints}, in Taiwan
         for two years. As a missionary I lived a rigorous schedule
@@ -279,35 +408,23 @@ for my PhD research.
         service, gospel study, and active proselyting. During my mission tenure
         I had many leadership opportunities such as being responsible for the training, well
         being, and success of other groups of missionaries from 10-40 in number and
-        spread over large geographic regions. (2007-2009)
-    \item {\bf Cub Scout Bear Den Leader:} My wife and I volunteered to be Cub
-        Scout leaders in our community. We held weekly den meetings with groups
-        of 5-10 boys ages 8-9 and taught them life skills, took them on field
-        trips, and helped them advance through the Cub Scout ranking system.
-        (2012-2013)
-    \item {\bf Assistant Scout Master:} I volunteered as an assistant scout
-        master in my local church sponsored Boy Scout's of America troop. I
-        mentored individual scouts multiple times per week at troop meetings,
-        on monthly camp outs, and during our annual BSA summer camp. (2013-2015)
+        spread over large geographic regions. \textbf{(2007-2009)}
 \end{itemize}
 
 \section*{Awards and Honors}
 \begin{itemize}
     \itemsep-0.5em
-    \item Eagle Scout (2004)
-    \item {\it Brigham Young University Idaho} Academic Excellence Full Tuition Scholarship (2011-2013)
-    \item \$2,000 {\it Society of Physics Students} Scholarship (2012)
-    \item {\it Sigma Pi Sigma} Physics Honor Society nomination (top 5\% of my class)
-    \item 3rd place for best oral presentation at BYUI undergraduate research conference
     \item Graduate Doctoral Academy Fellowship at the {\it University of Arkansas}
         (\$10k for 4 years 2013-2017)
-    \item 1st place for best poster in {\it University of Arkansas} poster competition (2015)
+    \item Eagle Scout (2004)
+    \item {\it Brigham Young University Idaho} Academic Excellence Full Tuition Scholarship (2011-2013)
+    \item {\it Sigma Pi Sigma} Physics Honor Society nomination (top 5\% of my class)
 \end{itemize}
 
 \section*{Interests}
 Philosophy of science, physical fitness, homesteading, hobby electronics (Arduino),
 intelligence (brain theory, sentience, perception, etc), classical education, music
-(piano and ukulele), space travel...
+(guitar and ukulele), space travel...
 
 {
     % \vspace{20pt}\newline\newline
